@@ -16,13 +16,13 @@
 //     },
 // };
 
-// export default nextConfig;
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
+  reactStrictMode: true,
+  experimental: {
+    serverActions: true,
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
+
